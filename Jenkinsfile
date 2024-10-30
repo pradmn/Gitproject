@@ -16,7 +16,7 @@ pipeline {
                     sh 'docker rm -f $(docker ps -a -q) || true'
                     
                     // Build the Docker image
-                    sh 'docker build /home/workspace/test -t staging'
+                    sh 'docker build /home/workspace/build -t staging'
                 }
             }
         }
